@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+             <script language="javascript">
+                 function fact1()
+                 {
+                  var num;              
+                 num=document.getElementById("num").value;
+                function fact2(num){
+                           if(num==1)
+                              return 1;
+                            else
+                              return num*fact2(num-1);  
+                       }
+                       var rvalue=fact2(num);
+                    document.getElementById("result").value=rvalue;
+                 }
+                
+             </script>    
+        </head>
+        <body>
+        <form name=frm>
+         enter the number:<input type="text" id="num"><br>
+            <input type="button" value="factorial"  onclick="fact1()"><br>
+            factorial no. is:<input id="result">
+        </form>
+        </body>
+        </html>

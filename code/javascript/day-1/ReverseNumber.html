@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function palin()
+{
+    var a,temp=0,no,b;
+    no=Number(document.getElementById("input").value)
+    b=no;
+    while(no>0)
+    {
+        a=no%10;
+        no=parseInt(no/10);
+        temp=temp*10+a;
+    }
+    alert(temp);
+}
+</script>
+</head>
+<body>
+    <h1>enter any number</h1>
+    <input type="text" id="input">
+    <button onclick="palin()">Ok</button>
+</body>
+    </html>

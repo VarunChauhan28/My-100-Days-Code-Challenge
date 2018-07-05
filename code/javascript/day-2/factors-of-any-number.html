@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <title>factor of any number</title>
+   <script>
+        
+       
+        var i,num;
+        function fact(){
+            var num=document.getElementById("number").value
+            for(i=1;i<=num;i++)
+            {
+                if(num%i==0)
+                {
+                    
+                  document.write("factors are"+i)
+                }
+            }
+        }
+        </script>
+</head>
+<body>
+    <form>
+        <input tupe="text" id="number" >
+        <p/>
+        <input type="button" onClick='fact()' value="click"><br>
+
+        </form>
+     </body>
+     
+</html>

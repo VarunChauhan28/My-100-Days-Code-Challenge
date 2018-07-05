@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <title>celsius to farhenheit</title>
+
+</head>
+<body>
+   <input tupe="number" id="farhenheit">
+   <p/>
+   <input type="button" onClick='c2f()' value="convert"><br>
+   <p/>
+   <input tupe="number" id="celsius" disabled>
+</body>
+
+<script>
+        var cel=document.getElementById('celsius')
+        var far=document.getElementById('farhenheit')
+        function c2f()
+        {
+           
+            cel.value=0.555*(far.value-32)
+           
+            
+            alert(far.value+'celsius is equal to '+cel.value+'farhenheit')
+
+        }
+    
+    
+    </script>
+</html>
