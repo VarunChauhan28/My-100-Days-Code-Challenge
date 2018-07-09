@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+             
+         <p id="message001"> question is:<text id="name001"></text></p>
+        
+         <div id="disappear">
+          <input type="text" id="input"><button Onclick="Submit001()">Submit</button>
+       
+</div>
+          <p id="answer"></p>
+        
+        
+          <p id="button001"></p>
+
+          
+    
+    <script>
+    var cal001=["2+9", "45-5", "4*5", "8/2"];
+    var ans001=["11", "40", "20", "4"];
+    var random001=Math.floor(Math.random()*cal001.length);
+    function Submit001(){
+
+        var b=input.value;
+        if(random001==0 && b==ans001[0])
+        {
+            document.getElementById("answer").innerHTML="correct.."
+            document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>"
+            document.getElementById("disappear").innerHTML=""
+            
+        }
+         
+        else if(random001==1 && b==ans001[1])
+        {
+            document.getElementById("answer").innerHTML="correct.."
+            document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>"
+            document.getElementById("disappear").innerHTML=""
+            
+        }
+        else if(random001==2 && b==ans001[2])
+        {
+            document.getElementById("answer").innerHTML="correct"
+            document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>"
+            document.getElementById("disappear").innerHTML=""
+        }
+        else if(random001==3 && b==ans001[3])
+        {
+            document.getElementById("answer").innerHTML="correct.."
+            document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>"
+            document.getElementById("disappear").innerHTML=""
+        }
+        else{
+            document.getElementById("answer").innerHTML="Incorrect.."
+            document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>"
+            document.getElementById("disappear").innerHTML=""
+    
+        }
+       
+    }
+document.getElementById("name001").innerHTML=cal001[random001]
+
+function btn001()
+{
+    
+    var random001=Math.floor(Math.random()*cal001.length);
+    document.getElementById("name001").innerHTML=cal001[random001];
+    document.getElementById("button001").innerHTML="<button Onclick=btn001()>next</button>";
+    document.getElementById("disappear").innerHTML="<input type=text id=input><button Onclick=Submit001()>Submit</button>";
+    document.getElementById("answer").innerHTML="";
+}
+
+    
+</script>
+
+    </body>
+</html>   

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <form name="myform">
+    Q.1  (14+16)=?<br>
+    <input type="radio" name="q1" value="a">30<br>
+    <input type="radio" name="q1" value="b">29<br>
+    <input type="radio" name="q1" value="c">31<br>
+    <input type="radio" name="q1" value="d">27<br>
+    <br><br>
+    Q.2      (23-4)=?<br>
+    <input type="radio" name="q2" value="a">30<br>
+    <input type="radio" name="q2" value="b">29<br>
+    <input type="radio" name="q2" value="c">19<br>
+    <input type="radio" name="q2" value="d">27<br>
+
+    Q.3    (12*4)=?<br>
+    <input type="radio" name="q3" value="a">30<br>
+    <input type="radio" name="q3" value="b">29<br>
+    <input type="radio" name="q3" value="c">19<br>
+    <input type="radio" name="q3" value="d">48<br>
+    <br><br>
+    <input type="button"  value="submit" Onclick="check()">
+</form>
+<script>
+    function check(){
+        var q1=document.myform.q1.value;
+        var q2=document.myform.q2.value;
+        var q3=document.myform.q3.value;
+        var c=0;
+        if(q1=="a"){
+            c++
+        }
+        if(q2=="c"){
+            c++;
+        }
+        if(q3=="d")
+        {
+            c++;
+        }
+        alert("you got "+c+"marks")
+    }
+</script>
+
+    </body>
+</html>   
