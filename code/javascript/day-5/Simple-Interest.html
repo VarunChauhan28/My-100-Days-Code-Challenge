@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+   function myfunction()
+    {
+        var p=document.getElementById("prince").value
+        var r=document.getElementById("rate").value
+        var t=document.getElementById("year").value
+        var inr=p*t*r;
+        var inrst=inr/100;
+
+        document.getElementById("SI").innerHTML="Simple Interest is="+inrst;
+    }
+    function myfunction2()
+    {
+
+        var p=document.getElementById("prince1").value
+        var r=document.getElementById("rate1").value
+        var t=document.getElementById("year1").value
+        var n=document.getElementById("cnd").value
+        var r1=r/100;
+        var nbr=r1/n;
+        var x=(1+nbr);
+        var nt=n*t;
+        var xnt=Math.pow(x,nt);
+        var cmpndint=p*xnt;
+        document.getElementById("CI").innerHTML="Compound Interest is="+cmpndint;
+    }
+</script>
+
+
+</head>
+<body>
+<table border=2 width="100%">
+<tr>
+    <th>Simple Interest</th>
+    <th>Compound Interest</th>
+</tr>
+<tr>
+<td>
+    Enter the principle Interest:<input type="text" id="prince"><br>
+    Enter the rate of Interest:<input type="text" id="rate"><br>
+    Enter the No. of years:<input type="text" id="year"><br>
+    <button Onclick="myfunction()">calculate</button>
+    <p id="SI"></p>
+</td>
+<td>
+        Enter the principle Interest:<input type="text" id="prince1"><br>
+        Enter the rate of Interest:<input type="text" id="rate1"><br>
+        Enter the No. of years:<input type="text" id="year1"><br>
+        Enter the rate of compound per year:<input type="text" id="cnd"><br>
+        <button Onclick="myfunction2()">calculate</button>
+        <p id="CI"></p>
+    </td>
+   </tr>
+ </table>
+
+</body>
+
+</html>
