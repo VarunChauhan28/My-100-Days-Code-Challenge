@@ -1,0 +1,20 @@
+
+var arr=[0,4,3,6,8,9,0,1,0];
+var len=arr.length;
+var count=0;
+for(var i=0;i<len;i++)
+{
+    if(arr[i]!=0)
+    {
+        arr[count++]=arr[i];
+    }
+}
+while(count<len)
+{
+    arr[count++]=0;
+}
+for(var j=0;j<len;j++)
+{
+    console.log("",arr[j]);
+}
+
